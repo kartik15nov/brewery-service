@@ -1,7 +1,6 @@
 package com.unknownbrain.msscbrewery.services;
 
 import com.unknownbrain.msscbrewery.web.model.BeerDto;
-import com.unknownbrain.msscbrewery.web.model.BeerStyleEnum;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +14,7 @@ public class BeerServiceImpl implements BeerService {
     public BeerDto getBeerById(UUID beerId) {
         return BeerDto.builder().id(UUID.randomUUID())
                 .beerName("Galaxy Cat")
-                .beerStyle(BeerStyleEnum.PALE_ALE)
+                .beerStyle("PALE_ALE")
                 .build();
     }
 

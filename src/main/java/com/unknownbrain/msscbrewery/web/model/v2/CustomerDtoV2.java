@@ -1,4 +1,4 @@
-package com.unknownbrain.msscbrewery.web.model;
+package com.unknownbrain.msscbrewery.web.model.v2;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,14 +11,8 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BeerDto {
+public class CustomerDtoV2 {
 
     private UUID id;
-
-    private String beerName;
-
-    private String beerStyle;
-
-    private Long upc;
-
+    private String name;
 }

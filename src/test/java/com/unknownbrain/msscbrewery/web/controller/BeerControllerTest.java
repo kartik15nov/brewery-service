@@ -3,7 +3,6 @@ package com.unknownbrain.msscbrewery.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.unknownbrain.msscbrewery.services.BeerService;
 import com.unknownbrain.msscbrewery.web.model.BeerDto;
-import com.unknownbrain.msscbrewery.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +37,7 @@ class BeerControllerTest {
     public void setUp() {
         validBeer = BeerDto.builder().id(UUID.randomUUID())
                 .beerName("Beer1")
-                .beerStyle(BeerStyleEnum.PALE_ALE)
+                .beerStyle("PALE_ALE")
                 .upc(123456789012L)
                 .build();
     }
