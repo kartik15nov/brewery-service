@@ -11,11 +11,11 @@ import java.util.UUID;
 
 @RequestMapping("/api/v2/beer")
 @RestController
-public class BeerController {
+public class BeerControllerV2 {
 
     private final BeerServiceV2 beerServiceV2;
 
-    public BeerController(BeerServiceV2 beerServiceV2) {
+    public BeerControllerV2(BeerServiceV2 beerServiceV2) {
         this.beerServiceV2 = beerServiceV2;
     }
 

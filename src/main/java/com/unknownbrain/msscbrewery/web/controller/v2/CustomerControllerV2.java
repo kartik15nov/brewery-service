@@ -11,11 +11,11 @@ import java.util.UUID;
 
 @RequestMapping("api/v2/customer")
 @RestController
-public class CustomerController {
+public class CustomerControllerV2 {
 
     private final CustomerServiceV2 customerServiceV2;
 
-    public CustomerController(CustomerServiceV2 customerServiceV2) {
+    public CustomerControllerV2(CustomerServiceV2 customerServiceV2) {
         this.customerServiceV2 = customerServiceV2;
     }
 

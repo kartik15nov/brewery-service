@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(BeerController.class)
-class BeerControllerTest {
+class BeerControllerV2Test {
 
     @Autowired
     MockMvc mockMvc;
