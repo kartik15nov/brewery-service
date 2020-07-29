@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(BeerController.class)
-class BeerControllerV2Test {
+class BeerControllerTest {
 
     @Autowired
     MockMvc mockMvc;
@@ -68,8 +68,8 @@ class BeerControllerV2Test {
 
     @Test
     void updateBeerById() throws Exception {
-        BeerDto beerDto = BeerDto.builder().build();
-        String beerDtoJson = objectMapper.writeValueAsString(beerDto);
+        validBeer.setId(null);
+        String beerDtoJson = objectMapper.writeValueAsString(validBeer);
 
         mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID().toString())
                 .contentType(MediaType.APPLICATION_JSON)
